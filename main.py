@@ -15,7 +15,7 @@ def generate():
     
     # 生成解释文本
     model_engine = "text-davinci-003"
-    prompt = f"Explain the Linux command '{command}'"
+    prompt = f"解释Linux命令：'{command}'"
     response = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
